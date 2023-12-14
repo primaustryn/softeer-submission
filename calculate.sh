@@ -1,4 +1,4 @@
-PREFIX='1_ab'
+PREFIX=$1
 cd $PREFIX && python3 submission.py < input  > output
 diff output answer
 if [ $? != 0 ]
